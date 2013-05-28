@@ -88,8 +88,8 @@ def index():
     
     headers['Content-type'] = 'application/x-www-form-urlencoded'
     post_data = {}
-    post_data["login"] = "by8nana"
-    post_data["passwd"] = "877877"
+    post_data["login"] = "myname"
+    post_data["passwd"] = "12345"
     
     #hiddens = data.xpath("//form[@name='login_form']/input[@type='hidden']", namespaces={"regxp": "http://exslt.org/regular-expressions"})
     #for h in hiddens:
@@ -145,9 +145,9 @@ def test():
 
     #return resp.read()
 
-def test2():
+def test_login_yahoo_account():
     url = "https://login.yahoo.co.jp/config/login?.src=&.done=http%3A//www.yahoo.co.jp/"
-    form_data = {'login' : 'by8nana', 'passwd' : '877877'}
+    form_data = {'login' : 'myname', 'passwd' : '123456'}
     jar = cookielib.CookieJar()
     opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(jar))
     form_data = urllib.urlencode(form_data)

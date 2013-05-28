@@ -27,7 +27,7 @@ def mail(to, subject, message):
     mail.settings.server = 'localhost'
     #mail.settings.server = 'smtp.gmail.com:587'
     mail.settings.sender = '"gogocow video downloader" <service@gogocow.com>'
-    #mail.settings.login = 'service@gogocow.com:09140317'
+    #mail.settings.login = 'service@gogocow.com:123456'
 
     mail.send(
         to=[to],
